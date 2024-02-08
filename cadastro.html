@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cssculinaria.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Inclua o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <!-- Estilos personalizados -->
+
+    <title>Culinária Asiatica</title>
+</head>
+
+<div class="content">
+
+    <!-- Barra de navegação Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+        <a class="navbar-brand strong" href="index.html">Culinária Asiatica</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Conteúdo do menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Lista de itens do menu -->
+            <ul class="navbar-nav">
+                <!-- Item de menu simples (Opção 4) -->
+                <li class="nav-item active dropdown">
+                    <a class="nav-link strong" href="index.html">Página Inicial</a>
+                </li>
+                <!-- Item de menu com dropdown (Opção 1) -->
+                <li class="nav-item active dropdown">
+                    <!-- Link do item de menu com dropdown -->
+                    <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tipos De Culinárias
+                    </a>
+                    <!-- Menu suspenso para Opção 1 -->
+                    <div class="dropdown-menu dropdown-menu-subopcao" aria-labelledby="navbarDropdown1">
+                        <!-- Link para Subopção 1.1 -->
+                        <a class="dropdown-item strong" href="index.html#subopcao1_1">Japonesa</a>
+                        <div class="dropdown-divider"></div>
+                        <!-- Itens do menu suspenso -->
+                        <a class="dropdown-item strong" href="index.html#subopcao1_2">Chinesa</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item strong" href="index.html#subopcao1_3">Indiana</a>
+                    </div>
+                </li>
+                <!-- Item de menu com dropdown (Opção 2) -->
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Receitas
+                    </a>
+                    <!-- Menu suspenso para Opção 2 -->
+                    <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown2">
+                        <!-- Itens do menu suspenso -->
+                        <a class="dropdown-item strong" href="sub2.1.html">Receita de Comida Japonesa</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item strong" href="sub2.2.html">ReceIta de Comida Chinesa</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item strong" href="sub2.3.html">Receita de Comida Indiana</a>
+                    </div>
+                </li>
+                <!-- Item de menu com dropdown (Opção 3) -->
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown3" role"button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Fórum
+                    </a>
+                    <!-- Menu suspenso para Opção 3 -->
+                    <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown3">
+                        <!-- Itens do menu suspenso -->
+                        <a class="dropdown-item strong" href="sub3.1.html">Quem Somos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item strong" href="sugestao.html">Sugestões</a>
+
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link strong black" href="cadastro.html">Cadastro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navbar-light navbar-nav nav-link  strong black" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Formulário de Cadastro -->
+    <div id="formulario">
+        <div class="text-center black" id="mensagemSucesso" style="display: none;">
+            <div class="margin-down">
+                <h2>Cadastro de Usuário</h2>
+            </div>
+            <p>Cadastro realizado com sucesso! Verifique seu e-mail para confirmação.</p>
+        </div>
+
+        <div class="">
+            <form id="cadastroForm" action="processa_cadastro.php" class="shadow p-3 mb-5 bg-white rounded"
+                method="post" onsubmit="return verificarSenhas();">
+                <div class="margin-down">
+                    <div class="form-group">
+                        <div class="margin-down">
+                            <h1>Cadastro</h1>
+                        </div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control form-control-sm custom-input"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="form-control form-control-sm custom-input"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for "senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" class="form-control form-control-sm custom-input"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmar_senha">Confirmar Senha:</label>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha"
+                        class="form-control form-control-sm custom-input" required>
+                </div>
+
+                <div id="mensagemSucesso" style="display: none;">
+                    <p>CADASTRO EFETUADO COM SUCESSO! Verifique o seu e-mail para fazer a verificação.</p>
+                </div>
+                <div id="mensagemErro" style="color: red; display: none;">As senhas não coincidem. Por favor, verifique.
+                </div>
+
+                <button type="submit" class="btn btn-primary strong">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <div id="mensagemSucesso" style="display: none;">
+        <p>Cadastro realizado com sucesso! Verifique seu e-mail para confirmação.</p>
+    </div>
+    <div id="mensagemSucesso" style="display: none;">
+        <h2>CADASTRO EFETUADO COM SUCESSO</h2>
+        <p>Verifique o seu e-mail para fazer a verificação.</p>
+    </div>
+
+
+</div>
+</div>
+<a href="processa_cadastro.php"></a>
+<footer> <!-- Defina o posicionamento relativo para o footer -->
+    <p>&copy; Culinária Asiática <br>João Myazaki</p>
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</footer>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let formulario = document.getElementById("cadastroForm");
+        let mensagemSucesso = document.getElementById("mensagemSucesso");
+        let mensagemErro = document.getElementById("mensagemErro");
+
+        formulario.addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita o envio padrão do formulário
+
+            // Obtenha os valores dos campos de senha
+            let senha = document.getElementById("senha").value;
+            let confirmarSenha = document.getElementById("confirmar_senha").value;
+
+            if (senha === confirmarSenha) {
+                // Senhas coincidem, oculte o formulário e exiba a mensagem de sucesso
+                mensagemErro.style.display = "none";
+                mensagemSucesso.style.display = "block";
+                formulario.style.display = "none";
+            } else {
+                // Senhas não coincidem, exiba a mensagem de erro e evite o envio do formulário
+                mensagemErro.style.display = "block";
+                mensagemSucesso.style.display = "none"; // Certifique-se de ocultar a mensagem de sucesso
+                return false; // Evite o envio do formulário
+            }
+        });
+    });
+</script>
+<!-- Inclua os scripts do Bootstrap e jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</body>
+
+</html>

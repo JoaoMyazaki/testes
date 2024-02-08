@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cssculinaria.css">
+
+    <!-- Inclua o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Estilos personalizados -->
+
+    <title>Culinária Asiatica</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <!-- Barra de navegação Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+            <a class="navbar-brand strong" href="index.html">Culinária Asiatica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Conteúdo do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Lista de itens do menu -->
+                <ul class="navbar-nav">
+                    <!-- Item de menu simples (Opção 4) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link strong" href="index.html">Página Inicial</a>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 1) -->
+                    <li class="nav-item active dropdown">
+                        <!-- Link do item de menu com dropdown -->
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos De Culinárias
+                        </a>
+                        <!-- Menu suspenso para Opção 1 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao" aria-labelledby="navbarDropdown1">
+                            <!-- Link para Subopção 1.1 -->
+                            <a class="dropdown-item strong" href="#subopcao1_1">Japonesa</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="#subopcao1_2">Chinesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="#subopcao1_3">Indiana</a>
+                        </div>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 2) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Receitas
+                        </a>
+                        <!-- Menu suspenso para Opção 2 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown2">
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="sub2.1.html">Receita de Comida Japonesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sub2.2.html">ReceIta de Comida Chinesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sub2.3.html">Receita de Comida Indiana</a>
+                        </div>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 3) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown3" role"button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Fórum
+                        </a>
+                        <!-- Menu suspenso para Opção 3 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown3">
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="sub3.1.html">Quem Somos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sugestao.html">Sugestões</a>
+
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link strong black" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link strong black" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Conteúdo da página -->
+        <div class="container mt-5">
+            <!-- Tópico 1 com títulos h2 e âncora -->
+            <div class="margin-down">
+                <p>
+                <h2 id="subopcao1_1">Culinária Japonesa</h2>
+                </p>
+            </div>
+            <ul>
+                <!-- Cinco tópicos com títulos h3 dentro de Tópico 1 -->
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/sushi.avif" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Sushi</h3>
+                            <p>O sushi é conhecido por ser composto por arroz, nori, que é uma espécie de folha feita
+                                com algas marinhas, e um recheio variado – peixe cru, peixe grelhado e, ainda, legumes,
+                                doces e muito mais.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/sashimi.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Sashimi</h3>
+                            <p>O sashimi é uma das iguarias mais tradicionais da gastronomia do Japão. Tem como
+                                principais ingredientes a carne de peixe e os frutos do mar, frescos e fatiados em
+                                pequenos pedaços. O prato é servido com molho shoyu, wasabi e gengibre ralado ou ponzu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/temaki.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Temaki</h3>
+                            <p>Uma das iguarias japonesas que tem conquistado mais apreciadores nos últimos anos é o
+                                temaki. A refeição rápida significa enrolado com a mão, sendo que “te” significa mão e
+                                “maki”, enrolado. Este cone tradicionalmente feito de folhas de algas com recheio de
+                                arroz e peixe tem origem no Japão e se tornou muito comum pelas cidades brasileiras. E,
+                                obviamente, é presença garantida no rodízio japonês do Djapa.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/tempura.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Tempurá</h3>
+                            <p>O tempura é uma preparação tradicional e presente no cotidiano dos japoneses. Vegetais,
+                                legumes e frutos do mar são empanados com farinha de trigo, de panko e fritos em óleo
+                                quente. O resultado é uma casquinha mais sequinha e saborosa enquanto o interior fica
+                                macio.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/missoshiru.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Missoshiru</h3>
+                            <p>O misoshiru é composto por dois ingredientes principais: o dashi (caldo de pescado) que é
+                                a base da sopa e o missô (pasta feita a partir de soja) que é dissolvido no dashi.
+                                Pode-se usar vários tipos distintos de missô, como o shiromiso (suave e com pouco sal),
+                                e o akamiso (forte e salgado).</p>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="container mt-5">
+            <!-- Tópico 1 com títulos h2 e âncora -->
+            <p>
+            <h2 id="subopcao1_2">Culinária Chinesa</h2>
+            </p>
+            <ul>
+                <!-- Cinco tópicos com títulos h3 dentro de Tópico 1 -->
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/yakissoba.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Yakissoba</h3>
+                            <p>Yakisoba significa “macarrão frito em molho”. Sem dúvida, uma definição bastante precisa
+                                de como
+                                é esse prato, que é um dos mais famosos do mundo. Assim, de forma resumida, este
+                                carboidrato é
+                                refogado junto com diversos ingredientes, como legumes e carnes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/Zong Zi.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Zong Zi</h3>
+                            <p>Zong, zongzi, ou recheios de arroz é um prato típico da cozinha tradicional chinesa
+                                elaborado com
+                                arroz glutinoso cozido de tal forma que tenha diferentes recheios, sendo enrolado em
+                                folhas de
+                                bambu. Costumam cozinhar-se ao vapor ou fervendo. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/Gua-Bao.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Gua-Bao</h3>
+                            <p>Baozi ou bao é um tipo de pão cozido no vapor de origem chinesa, com um aspecto de coque.
+                                Está
+                                presente em várias cozinhas orientais, com diversas variações de recheios e preparações.
+                                Farinha
+                                de trigo, fermento e água.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/pato.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Pato à Pequim</h3>
+                            <p>O pato assado de Pequim, também conhecido como “pato à Pequim” ou pato laqueado no
+                                Brasil, é um
+                                dos pratos mais famosos da culinária da China.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/tofu.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Mapo tofu</h3>
+                            <p>Considerado um dos 10 melhores pratos chineses, o mapo tofu ou mapo doufu, é um tofu
+                                picante com
+                                molho vermelho, pasta de amêndoa fermentada com pimenta, feijão preto também fermentado
+                                e carne
+                                bovina ou de porco moída.</p>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </div>
+        <div class="container mt-5">
+            <!-- Tópico 1 com títulos h2 e âncora -->
+            <p>
+            <h2 id="subopcao1_3">Culinária Indiana</h2>
+            </p>
+            <ul>
+                <!-- Cinco tópicos com títulos h3 dentro de Tópico 1 -->
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/Kitchari.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Kitchari</h3>
+                            <p>O kedgeree é um prato nacional Britânico, com origem no kitchari ou khichdi indiano.
+                                Prapara-se
+                                pela mistura de peixe defumado, arroz, limão, curry, ovos cozidos e salsa fresca. Sua
+                                origem
+                                remonta os contatos entre militares de origem inglesa e escocesa com as</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/Murgh makhani.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Murgh makhani</h3>
+                            <p>O frango com manteiga, tradicionalmente conhecido como murgh makhani, é um prato indiano
+                                originário de Delhi. É um tipo de curry feito de frango com molho de tomate e manteiga
+                                apimentado. Seu molho é conhecido por sua textura rica. É semelhante ao frango tikka
+                                masala, que
+                                usa uma pasta de tomate.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/Naan.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Naan</h3>
+                            <p>Naan é um antigo e típico pão indiano, com receita à base de trigo, podendo servir de
+                                acompanhamento a qualquer refeição. O pão é assado em um tandur e possui um formato
+                                peculiar,
+                                sendo circular e achatado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/Dal .jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Dal</h3>
+                            <p>O termo dal faz referência a um tipo de prato da culinária indiana, feito à base de
+                                cereais,
+                                geralmente lentilha. Tem como origem etimológica o nome dos cestos feitos de bambu que
+                                são
+                                utilizados para medir e transportar esses cereais, geralmente levados sobre as cabeças.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/Palak paneer.jpg" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Palak paneer</h3>
+                            <p>Palak paneer ou Palak Chhena é um prato indiano que consiste em chhena ou paneer em uma
+                                pasta
+                                grossa feita de purê de espinafre, chamada palak em hindi, marata, gujarati e outras
+                                línguas
+                                indianas. Os termos palak chhena e saag chhena às vezes são usados ​​​​alternadamente em
+                                restaurantes da Anglosfera.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+            </ul>
+        </div>
+    </div>
+    <footer> <!-- Defina o posicionamento relativo para o footer -->
+        <p>&copy; Culinária Asiática <br>João Myazaki</p>
+        <!-- Botão do WhatsApp -->
+        <a href="https://wa.me/seunumerodetelefone" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </footer>
+    <!-- Inclua os scripts do Bootstrap e jQuery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cssculinaria.css">
+
+    <!-- Inclua o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Culinária Asiatica</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <!-- Barra de navegação Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+            <a class="navbar-brand strong" href="index.html">Culinária Asiatica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Conteúdo do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Lista de itens do menu -->
+                <ul class="navbar-nav">
+                    <!-- Item de menu simples (Opção 4) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link strong" href="index.html">Página Inicial</a>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 1) -->
+                    <li class="nav-item active dropdown">
+                        <!-- Link do item de menu com dropdown -->
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos De Culinárias
+                        </a>
+                        <!-- Menu suspenso para Opção 1 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao" aria-labelledby="navbarDropdown1">
+                            <!-- Link para Subopção 1.1 -->
+                            <a class="dropdown-item strong" href="index.html#subopcao1_1">Japonesa</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="index.html#subopcao1_2">Chinesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="index.html#subopcao1_3">Indiana</a>
+                        </div>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 2) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Receitas
+                        </a>
+                        <!-- Menu suspenso para Opção 2 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown2">
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="sub2.1.html">Receita de Comida Japonesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sub2.2.html">ReceIta de Comida Chinesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sub2.3.html">Receita de Comida Indiana</a>
+                        </div>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 3) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown3" role"button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Fórum
+                        </a>
+                        <!-- Menu suspenso para Opção 3 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown3">
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="sub3.1.html">Quem Somos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sugestao.html">Sugestões</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link strong black" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-light navbar-nav nav-link  strong black" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container mt-5">
+        <div class="receita margin-down">
+            <h2>Kitchari</h2>
+            <div class="shadow p-3 mb-5 bg-white rounded">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="font-weight-bold">Ingredientes:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-2">1/2 caneca de arroz branco ou integral (demolhado durante a noite)</li>
+                            <li class="mb-2">1/4 caneca de feijão mungo (demolhado durante a noite)</li>
+                            <li class="mb-2">4-5 canecas de água</li>
+                            <li class="mb-2">3 colheres (sopa) de manteiga ghee</li>
+                            <li class="mb-2">1 dente de alho picado</li>
+                            <li class="mb-2">1/2 cebola picada</li>
+                            <li class="mb-2">1 colher (chá) de sementes de mostarda</li>
+                            <li class="mb-2">1 colher (chá) de cominhos em grão</li>
+                            <li class="mb-2">1 colher (chá) de gengibre fresco ralado</li>
+                            <li class="mb-2">1 colher (chá) de sal marinho</li>
+                            <li class="mb-2">1/2 colher (chá) de curcuma em pó</li>
+                            <li class="mb-2">coentros frescos para guarnecer</li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="img-padrao" src="img/kitcharii.jpg" alt="">
+                        <p class="font-weight-bold">Modo de Preparo:</p>
+                        <ol>
+                            <li>Em uma panela, aqueca o ghee e salteie as sementes de mostarda e os cominhos por 1-2
+                                minutos
+                            </li>
+                            <li>Adicione o alho e a cebola e deixe fritar um pouco
+                            </li>
+                            <li>Escorra a água do feijão mungo e do arroz. Junte-os ao conteúdo da panela deixando
+                                saltear por mais uns minutos</li>
+                            <li>Adiciona a água e deixe levantar fervura
+                            </li>
+                            <li>Adicione o sal, a curcuma, o gengibre e reduza o fogo para o mínimo. Tape e deixe
+                                cozinhar até o feijão estar tenro (cerca de 30 minutos). Se necessário, adicione mais
+                                água
+                            </li>
+                            <li>Sirva com coentros frescos picados</li>
+
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="receita margin-down">
+                <h2>Murgh Makhani</h2>
+                <div class="shadow p-3 mb-5 bg-white rounded">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="font-weight-bold">Ingredientes:</p>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">3 peitos de frango (em pedaços)</li>
+                                <li class="mb-2">1 colher de chá (bem cheia) de pimentão-doce </li>
+                                <li class="mb-2">1 colher de chá de cominhos em pó</li>
+                                <li class="mb-2">1 colher de sobremesa de gengibre em pó</li>
+                                <li class="mb-2">1 colher de sobremesa de alho em pó</li>
+                                <li class="mb-2">2 colheres de sopa de iogurte natural</li>
+                                <li class="mb-2">2 colheres de sopa de sumo de limão</li>
+                                <li class="mb-2">Sal q.b.</li>
+                                <li class="mb-2">3-4 colheres de sopa de manteiga</li>
+                                <li class="mb-2">1 colher de chá de canela em pó</li>
+                                <li class="mb-2">1 colher de chá de pimentão-doce</li>
+                                <li class="mb-2">1 colher de chá de gengibre em pó</li>
+                                <li class="mb-2">1 colher de chá de alho em pó</li>
+                                <li class="mb-2">1 colher de café de cominhos em pó</li>
+                                <li class="mb-2">1 folha de louro</li>
+                                <li class="mb-2">1 lata de tomate pelado (400 g)</li>
+                                <li class="mb-2">100 ml de natas</li>
+                                <li class="mb-2">1 pitada de açúcar</li>
+                                <li class="mb-2">Coentros frescos picados q.b.</li>
+                                <li class="mb-2">Sal q.b.</li>
+
+
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="img-padrao" src="img/murgh.jpg" alt="">
+                            <p class="font-weight-bold">Modo de Preparo:</p>
+                            <ol>
+                                <li> Corte os peitos de frango em pedaços pequenos, coloque-os num recipiente largo e
+                                    tempere-os com sal, pimentão-doce, cominhos, gengibre, sumo de limão, iogurte e sal.
+                                </li>
+                                <li>Com as mãos envolva bem o tempero no frango de modo a ficar bem distribuído em
+                                    termos de sabores. Cubra o recipiente com película aderente e deixe marinar por duas
+                                    horas, pelo menos.</li>
+                                <li>Após esse tempo divida a manteiga em duas partes iguais, reserve uma delas. Com a
+                                    parte da manteiga que não reservou deve fritar os pedacinhos de frango até estarem
+                                    bem lourinhos.</li>
+                                <li> Retire o frango da frigideira e no molho existente junte a restante manteiga que
+                                    reservou, deixe derreter e adicione alguns dos ingredientes para o molho:
+                                    pimentão-doce, cominhos, gengibre, alho, louro e a canela.</li>
+                                <li> Deixe cozinhar 2-3 minutos e vá mexendo sempre. Findo este tempo retire a folha de
+                                    louro e junte o tomate pelado bem picadinho. Deixe apurar por volta de 10 minutos e
+                                    passe o molho pela varinha magica de modo a obter uma espécie de creme.</li>
+                                <li>Após isto, rectificam-se os temperos de sal e açúcar. Acrescente as natas e mexa
+                                    muito bem até obter um molho bastante cremoso e homogéneo, volte a rectificar os
+                                    temperos, caso seja necessário.</li>
+                                <li>Por fim, junte o frango ao molho e envolva muito bem, deixe cozinhar por mais 4-5
+                                    minutos. Findo este tempo retire do lume e polvilhe com coentros frescos picados.
+                                </li>
+                                <li>Sirva de imediato acompanhado de arroz basmati.</li>
+
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="receita margin-down">
+                    <h2>Dal</h2>
+                    <div class="shadow p-3 mb-5 bg-white rounded">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="font-weight-bold">Ingredientes:</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">300 gramas de Lentilhas cozidas
+                                    </li>
+                                    <li class="mb-2">2 unidades de Cebola branca</li>
+                                    <li class="mb-2">3 unidades de Tomate vermelho</li>
+                                    <li class="mb-2">1 pitada de Alho em pó</li>
+                                    <li class="mb-2">1 colher de café de Gengibre fresco</li>
+                                    <li class="mb-2">1 pitada de Cominho em pó</li>
+                                    <li class="mb-2">1 colher de chá de Coentro fresco picado</li>
+                                    <li class="mb-2">1 pitada de Gergelim</li>
+                                    <li class="mb-2">1 litro de Caldo de legumes</li>
+                                    <li class="mb-2">2 colheres de chá de Manteiga ou ghee</li>
+                                    <li class="mb-2">1 pitada de Pimenta caiena</li>
+                                    <li class="mb-2">1 pitada de Sal</li>
+                                    <li class="mb-2">1 colher de sopa de óleo ou azeite de oliva</li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <img class="img-padrao" src="img/Dall.jpg" alt="">
+                                <p class="font-weight-bold">Modo de Preparo:</p>
+                                <ol>
+                                    <li>O primeiro passo para preparar esta receita indiana é reunir os ingredientes. Se
+                                        você preferir usar a manteiga ghee, que é bem característica da culinária
+                                        indiana e não contém lactose, confira a receita de manteiga clarificada (ghee).
+                                    </li>
+                                    <li>Leve uma panela funda ao fogo médio com um pouco de óleo ou azeite de oliva, e
+                                        refogue a cebola e o tomate picados por alguns minutos.</li>
+                                    <li>Em seguida adicione a manteiga ou a ghee e tempere com sal, pimenta, alho,
+                                        pimenta caiena e o gengibre picado finamente, e misture tudo.
+
+                                    </li>
+                                    <li>Quando a cebola estiver dourada, é hora de adicionar as lentilhas e o caldo de
+                                        legumes. Deixe cozinhar em fogo médio-baixo por 20 minutos, ou até perceber que
+                                        a mistura ficou cremosa.</li>
+                                    <li>Este deverá ser o aspeto do dahl de lentilhas depois de cozinhar pelo tempo
+                                        indicado. Finalize com os cominhos e o coentro e desligue o fogo.</li>
+                                    <li>Finalmente seu dahl de lentilha está pronto a servir! Sirva ainda quente, como
+                                        prato principal ou acompanhamento de, por exemplo, pão recheado com queijo e
+                                        cogumelos. Bom apetite e diga-nos o que achou!</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <footer> <!-- Defina o posicionamento relativo para o footer -->
+                    <p>&copy; Culinária Asiática <br>João Myazaki</p>
+                    <!-- Botão do WhatsApp -->
+                    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </footer>
+                <!-- Inclua os scripts do Bootstrap e jQuery -->
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

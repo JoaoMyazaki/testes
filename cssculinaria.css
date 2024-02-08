@@ -1,0 +1,143 @@
+/* Estilos para a barra de navegação Bootstrap */
+.navbar-custom {
+    background-color: #ff9900;
+}
+
+/* Estilos para o fundo das subopções de menu */
+.dropdown-menu-subopcao {
+    background-color: #888888 !important;
+
+}
+
+/* Estilos para textos fortes (strong) */
+.strong {
+    font-weight: bolder !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000 !important;
+}
+/* Defina a cor do texto para os links do menu */
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+}
+
+/* Alinhe o último item do menu "Cadastro" à direita e adicione espaço entre os itens */
+.navbar-nav.ml-auto {
+    justify-content: flex-end;
+}
+
+.navbar-nav.ml-auto .nav-item {
+    margin-left: 10px;
+}
+
+/* Remova a margem do último item (botão "Cadastro") */
+.navbar-nav.ml-auto .nav-item:last-child {
+    margin-left: 0;
+}
+
+/* Alinhe o texto à direita */
+.align-right {
+    text-align: right;
+}
+
+/* Estilos para o texto "Login" */
+.black {
+    color: #333;
+}
+
+/* Estilos para imagens com classe "img-padrao" */
+.img-padrao {
+    width: 400px;
+    height: 350px;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    position: relative; /* Adicione esta linha */
+}
+
+/* Estilos para o conteúdo da página */
+.content {
+    flex-grow: 1;
+}
+
+/* Estilos para o rodapé da página */
+footer {
+    position: absolute; /* Adicione esta linha */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+.whatsapp-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #25D366; /* Cor verde do WhatsApp */
+    color: #fff; /* Cor do texto */
+    font-size: 24px; /* Tamanho do ícone */
+    width: 50px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    border-radius: 50%; /* Botão circular */
+    display: flex; /* Alinha o conteúdo no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    transition: background-color 0.3s; /* Transição suave de cor */
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Cor verde mais escura no hover */
+}
+
+/* Estilos para a margem superior (ajuste conforme necessário) */
+.margin-down {
+    margin-top: 100px;
+}
+
+/* Estilos para o botão "Cadastro" e "Login" */
+.btn-primary {
+    color: #fff;
+    background-color: #ff9900;
+    border-color: #ff9900;
+}
+
+/* Estilos para o formulário (classe "formulario") */
+#formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para os campos de entrada de texto responsivos */
+.form-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para títulos h1 e h2 */
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}

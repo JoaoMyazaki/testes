@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="cssculinaria.css">
+    <!-- Inclua o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Estilos personalizados -->
+
+
+    <title>Culinária Asiatica</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <!-- Barra de navegação Bootstrap -->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom fixed-top">
+            <a class="navbar-brand strong" href="index.html">Culinária Asiatica</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Conteúdo do menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Lista de itens do menu -->
+                <ul class="navbar-nav">
+                    <!-- Item de menu simples (Opção 4) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link strong" href="index.html">Página Inicial</a>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 1) -->
+                    <li class="nav-item active dropdown">
+                        <!-- Link do item de menu com dropdown -->
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown1" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tipos De Culinárias
+                        </a>
+                        <!-- Menu suspenso para Opção 1 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao" aria-labelledby="navbarDropdown1">
+                            <!-- Link para Subopção 1.1 -->
+                            <a class="dropdown-item strong" href="index.html#subopcao1_1">Japonesa</a>
+                            <div class="dropdown-divider"></div>
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="index.html#subopcao1_2">Chinesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="index.html#subopcao1_3">Indiana</a>
+                        </div>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 2) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown2" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Receitas
+                        </a>
+                        <!-- Menu suspenso para Opção 2 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown2">
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="sub2.1.html">Receita de Comida Japonesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sub2.2.html">ReceIta de Comida Chinesa</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sub2.3.html">Receita de Comida Indiana</a>
+                        </div>
+                    </li>
+                    <!-- Item de menu com dropdown (Opção 3) -->
+                    <li class="nav-item active dropdown">
+                        <a class="nav-link dropdown-toggle strong" href="#" id="navbarDropdown3" role"button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Fórum
+                        </a>
+                        <!-- Menu suspenso para Opção 3 -->
+                        <div class="dropdown-menu dropdown-menu-subopcao strong" aria-labelledby="navbarDropdown3">
+                            <!-- Itens do menu suspenso -->
+                            <a class="dropdown-item strong" href="sub3.1.html">Quem Somos</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item strong" href="sugestao.html">Sugestões</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link strong black" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-light navbar-nav nav-link  strong black" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <section id="sugestoes" class="mt-5">
+                <div class="container">
+                    <div class="margin-down">
+                        <h2 class="mb-4">Envie suas Sugestões de Ideias</h2>
+                    </div <form action="processar_sugestao.php" method="post" id="sugestao-form">
+                    <div class="form-group">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" class="form-control" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="sugestao">Sua Sugestão:</label>
+                        <textarea class="form-control" id="sugestao" name="sugestao" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer> <!-- Defina o posicionamento relativo para o footer -->
+        <p>&copy; Culinária Asiática <br>João Myazaki</p>
+        <!-- Botão do WhatsApp -->
+        <a href="https://wa.me/seunumerodetelefone" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </footer>
+    <!-- Inclua os scripts do Bootstrap e jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script>
+        // Função para limpar os campos do formulário após o envio
+        document.getElementById('sugestao-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+            this.reset(); // Limpa os campos do formulário
+        });
+    </script>
+
+</body>
+
+</html>
